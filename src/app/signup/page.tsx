@@ -96,6 +96,12 @@ const SignupPage = () => {
             </label>
             {errors.terms && <p className="text-red-400 text-sm mb-4">{errors.terms}</p>}
 
+            
+            <div className="flex items-start">
+                <p className="">Have a Account</p>
+                <p className="pl-2 underline hover:cursor-pointer" onClick={()=>router.push("/login")}>Log in</p>
+            </div>
+
             <div className="flex items-center justify-center m-3">
                 <button className="w-fit p-4 pl-10 pr-10 bg-white text-[#1E3A8A] font-semibold py-3  hover:bg-gray-200 transition hover:cursor-pointer"
                     onClick={validEntry}>
